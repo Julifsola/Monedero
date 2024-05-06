@@ -4,10 +4,12 @@ import dds.monedero.exceptions.MaximaCantidadDepositosException;
 import dds.monedero.exceptions.MaximoExtraccionDiarioException;
 import dds.monedero.exceptions.MontoNegativoException;
 import dds.monedero.exceptions.SaldoMenorException;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class MonederoTest {
@@ -22,6 +24,7 @@ public class MonederoTest {
   @DisplayName("Es posible poner $1500 en una cuenta vacía")
   void Poner() {
     cuenta.poner(1500);
+    assertEquals(1500, cuenta.getSaldo());
   }
 
   @Test
@@ -36,6 +39,7 @@ public class MonederoTest {
     cuenta.poner(1500);
     cuenta.poner(456);
     cuenta.poner(1900);
+    assertEquals(3856, cuenta.getSaldo());
   }
 
   @Test

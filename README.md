@@ -27,8 +27,13 @@ Tenés seis tareas:
     *  [Entrada de Blog (en inglés)](https://www.baeldung.com/junit-5-migration)
     *  [Entrada de Blog (en español)](https://www.paradigmadigital.com/dev/nos-espera-junit-5/)
 * Maven 3.3 o superior
- 
 
-  
+### Code Smels encontrados
 
-
+Medium: Read of unwritten field prenda in ar.edu.utn.frba.dds.Item.importe() [ar.edu.utn.frba.dds.Item] At Item.java:[line 8] NP_UNWRITTEN_FIELD
+Unwritten field: ar.edu.utn.frba.dds.Item.prenda [ar.edu.utn.frba.dds.Item] At Item.java:[line 8] UWF_UNWRITTEN_FIELD
+Read of unwritten field ventas in ar.edu.utn.frba.dds.Negocio.ganaciasDe(Date) [ar.edu.utn.frba.dds.Negocio] At Negocio.java:[line 10] NP_UNWRITTEN_FIELD
+Unwritten field: ar.edu.utn.frba.dds.Negocio.ventas [ar.edu.utn.frba.dds.Negocio] At Negocio.java:[line 10] UWF_UNWRITTEN_FIELD
+Read of unwritten field items in ar.edu.utn.frba.dds.Venta.importe() [ar.edu.utn.frba.dds.Venta] At Venta.java:[line 11] NP_UNWRITTEN_FIELD
+Unwritten field: ar.edu.utn.frba.dds.Venta.fecha [ar.edu.utn.frba.dds.Venta] At Venta.java:[line 15] UWF_UNWRITTEN_FIELD
+Unwritten field: ar.edu.utn.frba.dds.Venta.items [ar.edu.utn.frba.dds.Venta] At Venta.java:[line 11] UWF_UNWRITTEN_FIELD
